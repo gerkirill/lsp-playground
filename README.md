@@ -19,6 +19,8 @@ wire, each JSON body is preceded by a header such as
 The examples below omit most parameters and response fields; the server may
 also send informational notifications such as `window/logMessage`.
 
+The complete SLP protocol specification can be found [here](https://microsoft.github.io/language-server-protocol/specifications/lsp/3.18/specification/).
+
 1. **Handshake.** The client sends an `initialize` **request** with workspace
    information and its capabilities. The server replies with the same `id` and
    its capabilities (including hover and definition support). The client then
