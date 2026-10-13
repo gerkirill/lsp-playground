@@ -56,6 +56,8 @@ The complete SLP protocol specification can be found [here](https://microsoft.gi
    ← {"jsonrpc":"2.0","id":3,"result":[{"uri":"file:///.../main.js","range":{"start":{"line":0,"character":8},"end":{"line":0,"character":13}}}]}
    ```
 
+   **Note:** LSP range positions are zero-based, and the end is exclusive.
+
 4. **Receive diagnostics.** The server sends
    `textDocument/publishDiagnostics` without being asked directly. One
    diagnostic reports that `greet(42)` passes a number where a string is
